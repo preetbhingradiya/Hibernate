@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/myhiber</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">123</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <mapping class="com.hibernate.Employ" />
+        <mapping class="com.hibernate.EmpDetails" />
+    </session-factory>
+</hibernate-configuration> 
+
+
+<!-- Downloading external resources is disabled. -->
+<!-- Element type "hibernate-configuration" must be declared. -->
+<!-- Element type "session-factory" must be declared. -->
+<!-- Element type "property" must be declared. -->
